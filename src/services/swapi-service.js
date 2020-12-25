@@ -44,7 +44,7 @@ class SwapiService {
         return this._transformPlanet(planet);
     }
 
-    _transformPlanet(planet) {
+    _transformPlanet = (planet) => {
         return {
             id: this._extractId(planet),
             name: planet.name,
